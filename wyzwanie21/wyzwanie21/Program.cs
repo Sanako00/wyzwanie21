@@ -4,6 +4,7 @@ string numberAsString = number.ToString();
 char[] chars = numberAsString.ToArray();
 
 int[] counter = new int[10];
+int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 foreach (char c in chars)
 {
@@ -19,13 +20,13 @@ foreach (char c in chars)
     else if (c == '9') { counter[9]++; }
 }
 Console.WriteLine("Ilość znaków w liczbie " + number);
-Console.WriteLine("0=>" + counter[0]);
-Console.WriteLine("1=>" + counter[1]);
-Console.WriteLine("2=>" + counter[2]);
-Console.WriteLine("3=>" + counter[3]);
-Console.WriteLine("4=>" + counter[4]);
-Console.WriteLine("5=>" + counter[5]);
-Console.WriteLine("6=>" + counter[6]);
-Console.WriteLine("7=>" + counter[7]);
-Console.WriteLine("8=>" + counter[8]);
-Console.WriteLine("9=>" + counter[9]);
+Console.WriteLine(numbers[0] + "=>" + counter[0]);
+Console.WriteLine(numbers[1] + "=>" + counter[1]);
+Console.WriteLine(numbers[2] + "=>" + counter[2]);
+Console.WriteLine(numbers[3] + "=>" + counter[3]);
+Console.WriteLine(numbers[4] + "=>" + counter[4]);
+Console.WriteLine(numbers[5] + "=>" + counter[5]);
+Console.WriteLine(numbers[6] + "=>" + counter[6]);
+Console.WriteLine(numbers[7] + "=>" + counter[7]);
+Console.WriteLine(numbers[8] + "=>" + counter[8]);
+Console.WriteLine(numbers[9] + "=>" + counter[9]);
